@@ -27,39 +27,34 @@ FimSe
 Escreva("Informe sua Renda: R$")
 Leia(renda)
 
-Se (renda < 1500) entao
+Se (renda <= 1500) entao
 
    EscrevaL("Renda Insuficiente!")
    Fimalgoritmo
 
 FimSe
 
-Escreva("Informe o valor que você deseja: R$")
-Leia(valorDesejado)
-
-// Parcela máxima segundo a Renda
+// Verificando a Parcela para venda
 Se (renda > 1500) E (renda < 2000) entao
 
    valorParcela <- renda * 0.15
    
-SeNao
-
-   Se (renda > 2000) entao
-   
-      valorParcela <- renda * 0.2
-      
-   SeNao
-   
-      Se (renda > 2500) entao
-      
-         valorParcela <- renda * 0.3
-      
-      FimSe
-      
-   FimSe
-   
 FimSe
 
+// Verificando a parcela entre 2000 e 2500
+Se (renda >= 2000) E (renda <= 2500) entao
+   
+   valorParcela <- renda * 0.2
+      
+FimSe
+
+// Parcela para renda maior que 2500...
+Se (renda > 2500) entao
+      
+   valorParcela <- renda * 0.3
+      
+FimSe
+      
 // Seguro segundo a Idade
 Se (idade >= 18) E (idade <= 29) entao
 
@@ -101,11 +96,11 @@ EscrevaL("Valor da Parcela: R$", valorParcela:2:2)
 EscrevaL("Valor do Seguro: R$", valorSeguro:2:2)
 
 // Verificando se é possível emprestar
-Se (valorDesejado > valorTotal) entao
+//Se (valorDesejado > valorTotal) entao
 
-   LimpaTela()
-   Escreva("Não é possível fazer a contratação!")
+//   LimpaTela()
+//   Escreva("Não é possível fazer a contratação!")
 
-FimSe
+//FimSe
 
 Fimalgoritmo
