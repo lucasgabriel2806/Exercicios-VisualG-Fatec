@@ -72,13 +72,13 @@ Inicio
 
       SeNao
 
-         Se (renda > 2000) entao
+         Se (renda > 2000) E (renda < 2500) entao
 
             valorParcela <- renda * 0.2
 
          SeNao
 
-            Se (renda > 2500) entao
+            Se (renda >= 2500) entao
 
                valorParcela <- renda * 0.3
 
