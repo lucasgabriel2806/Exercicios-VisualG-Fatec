@@ -1,4 +1,4 @@
-Algoritmo "semnome"
+Algoritmo "ELEICAO"
 // Disciplina   : Lógica de Programação e Algoritmos
 // Professor   : MSc. Tiago Antonio da Silva 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
