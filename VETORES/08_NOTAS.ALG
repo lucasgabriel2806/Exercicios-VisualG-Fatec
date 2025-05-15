@@ -183,15 +183,13 @@ Inicio
 
    EscrevaL()
 
-   EscrevaL()
-
-   EscrevaL("+----- LISTA DE ALUNOS -----+")
-
-   EscrevaL()
-
-   EscrevaL("Nº Matricula   |   Nome")
-
    Repita
+
+      EscrevaL("+----- LISTA DE ALUNOS -----+")
+
+      EscrevaL()
+
+      EscrevaL("Nº Matricula   |   Nome")
 
       Para i de 1 ate 10 faca
 
@@ -235,16 +233,97 @@ Inicio
 
          EscrevaL("Média: ", aluno2[3])
 
+      Caso 3
+
+         EscrevaL("Nome do aluno: ", alunos[i])
+
+         EscrevaL("1ª nota: ", aluno3[1])
+
+         EscrevaL("2ª nota: ", aluno3[2])
+
+         EscrevaL("Média: ", aluno3[3])
+
+      Caso 4
+
+         EscrevaL("Nome do aluno: ", alunos[i])
+
+         EscrevaL("1ª nota: ", aluno4[1])
+
+         EscrevaL("2ª nota: ", aluno4[2])
+
+         EscrevaL("Média: ", aluno4[3])
+
+      Caso 5
+
+         EscrevaL("Nome do aluno: ", alunos[i])
+
+         EscrevaL("1ª nota: ", aluno5[1])
+
+         EscrevaL("2ª nota: ", aluno5[2])
+
+         EscrevaL("Média: ", aluno5[3])
+
+      Caso 6
+
+         EscrevaL("Nome do aluno: ", alunos[i])
+
+         EscrevaL("1ª nota: ", aluno6[1])
+
+         EscrevaL("2ª nota: ", aluno6[2])
+
+         EscrevaL("Média: ", aluno6[3])
+
+      Caso 7
+
+         EscrevaL("Nome do aluno: ", alunos[i])
+
+         EscrevaL("1ª nota: ", aluno7[1])
+
+         EscrevaL("2ª nota: ", aluno7[2])
+
+         EscrevaL("Média: ", aluno7[3])
+
+      Caso 8
+
+         EscrevaL("Nome do aluno: ", alunos[i])
+
+         EscrevaL("1ª nota: ", aluno8[1])
+
+         EscrevaL("2ª nota: ", aluno8[2])
+
+         EscrevaL("Média: ", aluno8[3])
+
+      Caso 9
+
+         EscrevaL("Nome do aluno: ", alunos[i])
+
+         EscrevaL("1ª nota: ", aluno9[1])
+
+         EscrevaL("2ª nota: ", aluno9[2])
+
+         EscrevaL("Média: ", aluno9[3])
+
+      Caso 10
+
+         EscrevaL("Nome do aluno: ", alunos[i])
+
+         EscrevaL("1ª nota: ", aluno10[1])
+
+         EscrevaL("2ª nota: ", aluno10[2])
+
+         EscrevaL("Média: ", aluno10[3])
+
+
       OutroCaso
 
          EscrevaL("Aluno não cadastrado!")
 
       FimEscolha
-      
-   EscrevaL()
-   Escreva("Deseja continuar? (S/N) ")
-   Leia(resp)
-   EscrevaL()
+
+      EscrevaL()
+      Escreva("Deseja continuar? (S/N) ")
+      Leia(resp)
+      EscrevaL()
 
    Ate (resp = "N")
 
