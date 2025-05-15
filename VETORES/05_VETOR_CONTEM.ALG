@@ -1,4 +1,4 @@
-Algoritmo "VETOR_PAR"
+Algoritmo "05_VETOR_CONTEM"
 // Disciplina   : Lógica de Programação e Algoritmos
 // Professor   : MSc. Tiago Antonio da Silva 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
@@ -6,14 +6,13 @@ Algoritmo "VETOR_PAR"
 // Data atual  : 09/05/2025
 Var
 // Seção de Declarações das variáveis 
-
-numeros: vetor[1..8] de inteiro
-i: inteiro
+numeros: vetor[1..10] de inteiro
+i, numero: inteiro
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
 
-Para i de 1 ate 8 faca
+Para i de 1 ate 10 faca
 
   Escreva("Digite o", i, "º número: ")
   Leia(numeros[i])
@@ -22,12 +21,16 @@ FimPara
 
 EscrevaL()
 
-Para i de 1 ate 8 faca
+Escreva("Digite um número: ")
+Leia(numero)
 
-  Se (numeros[i] % 2 = 0) entao
+Para i de 1 ate 10 faca
 
-    EscrevaL("O número:", numeros[i], " é par.")
-    
+  Se (numero = numeros[i]) entao
+  
+    Escreva("O número", numero, " está na posição", i)
+    EscrevaL()
+  
   FimSe
 
 FimPara

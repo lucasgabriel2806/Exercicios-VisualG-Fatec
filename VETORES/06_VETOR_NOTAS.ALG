@@ -1,4 +1,4 @@
-Algoritmo "VETOR_NOTAS"
+Algoritmo "06_VETOR_NOTAS"
 // Disciplina   : Lógica de Programação e Algoritmos
 // Professor   : MSc. Tiago Antonio da Silva
 // Descrição   : Aqui você descreve o que o programa faz! (função)
@@ -46,12 +46,16 @@ Inicio
       EscrevaL()
 
    FimPara
+   
+   EscrevaL()
+   EscrevaL("------------------------------------")
+   Escreval()
 
    Para j de 1 ate 3 faca
 
       Se (media[j] >= 7) entao
 
-         EscrevaL("O aluno ", alunos[j], " está na média.")
+         EscrevaL("O aluno ", alunos[j], " está acima da média.")
          EscrevaL("Posição:", j)
          EscrevaL("Nota:", media[j])
          
