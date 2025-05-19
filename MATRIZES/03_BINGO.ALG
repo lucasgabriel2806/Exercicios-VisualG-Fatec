@@ -8,7 +8,7 @@ Var
    // Seção de Declarações das variáveis
    cartela: vetor[1..5, 1..5] de inteiro
 
-   i, j, numero: inteiro
+   i, j, numero, contInexistente: inteiro
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -34,22 +34,35 @@ Inicio
       EscrevaL()
 
    FimPara
-   
+
    EscrevaL("Digite um número: ")
    Leia(numero)
-   
-Para i de 1 ate 5 faca
 
-  Para j de 1 ate 5 faca
+   Para i de 1 ate 5 faca
 
-    Se (numero = cartela[i, j]) entao
-    
-      Escreva("O número está na posição: ", i, j)
-    
-    FimSe
-  
-  FimPara
+      Para j de 1 ate 5 faca
 
-FimPara
+         Se (numero = cartela[i, j]) entao
+
+            EscrevaL("Linha: ", i)
+            EscrevaL("Coluna: ", j)
+
+         FimSe
+
+         Se (numero <> cartela[i, j]) entao
+
+            contInexistente <- contInexistente + 1
+
+            Se (contInexistente = 25) entao
+
+               EscrevaL("Este número não está na cartela.")
+
+            FimSe
+
+         FimSe
+
+      FimPara
+
+   FimPara
 
 Fimalgoritmo
