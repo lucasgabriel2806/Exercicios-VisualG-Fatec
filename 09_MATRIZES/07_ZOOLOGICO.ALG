@@ -13,7 +13,9 @@ Var
 
 Inicio
    // Seção de Comandos, procedimento, funçõ/es, operadores, etc...
-
+   
+   i <- converte_em_inteiro("2")
+   escreva(i)
 
    Para i de 1 ate 5 faca
 
@@ -55,11 +57,11 @@ Inicio
    // Verificando maior população dos animais
    Para i de 1 ate 5 faca
 
-      Se (int(animais[i, 2]) > maiorQntdNum) entao
+      Se (converte_em_inteiro(animais[i, 2]) > maiorQntdNum) entao
 
          maiorQntdNome <- animais[i, 1]
 
-         maiorQntdNum <- int(animais[i, 2])
+         maiorQntdNum <- converte_em_inteiro(animais[i, 2])
 
       FimSe
 
@@ -71,11 +73,11 @@ Inicio
    // Verificando maior média de idade dos animais
    Para i de 1 ate 5 faca
 
-      Se (int(animais[i, 3]) > maiorIdadeNum) entao
+      Se (converte_em_inteiro(animais[i, 3]) > maiorIdadeNum) entao
 
          maiorIdadeNome <- animais[i, 1]
 
-         maiorIdadeNum <- int(animais[i, 3])
+         maiorIdadeNum <- converte_em_inteiro(animais[i, 3])
 
       FimSe
 
