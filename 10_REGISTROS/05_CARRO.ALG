@@ -15,27 +15,31 @@ FimRegistro
 Var
    // Seção de Declarações das variáveis
    carro: vetor[1..5] de TCarro
+   i: inteiro
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
 
    Para i de 1 ate 5 faca
 
-      EscrevaL("Digite o modelo do carro: ")
+      Escreva("Digite o modelo do carro: ")
       Leia(carro[i].modelo)
 
-      EscrevaL("Digite o ano do carro: ")
+      Escreva("Digite o ano do carro: ")
       Leia(carro[i].ano)
 
       EscrevaL()
 
    FimPara
+   
+   EscrevaL()
+   EscrevaL("Carros com ano depois 2015:")
 
    Para i de 1 ate 5 faca
 
-      Se (carro[i] > 2015) entao
+      Se (carro[i].ano > 2015) entao
 
-         EscrevaL()
+         EscrevaL(carro[i].modelo)
 
       FimSe
 
