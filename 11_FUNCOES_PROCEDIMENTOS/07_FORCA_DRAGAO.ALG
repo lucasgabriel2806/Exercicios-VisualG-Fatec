@@ -7,11 +7,16 @@ Algoritmo "07_FORCA_DRAGAO"
 Var
 // Seção de Declarações das variáveis 
 forca1, forca2: inteiro
+retorno: caractere
 
 Funcao CompararForca(f1, f2: inteiro): caractere
 Inicio
 
-   Escreva("Dragao 1:")
+   EscrevaL("Força do Dragao 1:", f1)
+
+   EscrevaL("Força do Dragao 2:", f2)
+
+   Escreva("Dragao 1: ")
 
    Se (f1 > f2) entao
    
@@ -36,15 +41,11 @@ FimFuncao
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
 
-forca1 <- randi(100)
 
-forca2 <- randi(100)
 
-EscrevaL("Força do Dragao 1:", forca1)
+retorno <- CompararForca(randi(100), randi(100))
 
-EscrevaL("Força do Dragao 2:", forca2)
-
-CompararForca(forca1, forca2)
+EscrevaL(retorno)
 
 
 Fimalgoritmo
