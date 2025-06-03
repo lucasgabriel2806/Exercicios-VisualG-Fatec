@@ -13,17 +13,21 @@ Var
 Funcao Media(n1, n2: real): real
 Inicio
 
-   media <- (n1 + n2) / 2
+   retorne media <- (n1 + n2) / 2
 
 FimFuncao
 
 Procedimento ExibirSituacao(media: real)
-
-   media <- Media()
+Inicio
+//   media <- Media(nota1, nota2)
 
    Se (media >= 6) entao
 
-
+     EscrevaL("Aluno", nome, " aprovado!")
+     
+   SeNao
+     
+     EscrevaL("Aluno", nome, " reprovado!")
 
    FimSe
 
@@ -44,7 +48,7 @@ Inicio
 
    Leia(nota2)
    
-   Media(nota1, nota2)
+   media <- Media(nota1, nota2)
 
 
 Fimalgoritmo
